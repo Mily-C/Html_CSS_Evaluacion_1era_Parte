@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilos_Registro.css">
+
+</head>
+<body>
+    <main class="Sign-up-container">
+    <section class="Sign-up-card">
+            <header>
+                <h1>Bienvenido al registro</h1>
+            </header>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="Nombre">Nombre completo</label>
+                            <input type="text" id="Nombre" name="Nombre" required placeholder="Karina Torres" pattern="[A-Za-záéíóúñÑ ]+">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="ID">Cedula</label>
+                        <input type="text" id="ID" name="ID" required placeholder="12345678" pattern="[0-9]{8,10}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Correo">Correo electronico</label>
+                            <input type="email" id="Correo" name="Correo" required placeholder="Karinnna@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Telefono">Numero telefonico</label>
+                            <input type="tel" id="Telefono" name="Telefono" required placeholder="00-0000000" pattern="[0-9]{11}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" id="Contraseña" name="Contraseña" required minlength="12">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Direccion">Dirección</label>
+                            <input type="text" id="Direccion" name="Direccion" required>
+                        </div>
+
+                        <div class="radio">
+                            <p>Tipo de cliente</p>
+                            <label for="Cliente_Natural">Natural</label>
+                            <input type="radio" id="Natural" name="Natural">
+                            <label for="Cliente_Juridico">Juridico</label>
+                            <input type="radio" id="Juridico" name="Juridico">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Sector/Industria">Sector/Industria</label>
+                            <select name="Sector/Industria" id="Sector/Industria">
+                                <option value="S.Comercio">Comercio</option>
+                                <option value="S.Artes">Artes</option>
+                                <option value="S.Idiomas">Idiomas</option>
+                                <option value="S.Salud">Salud</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-secondary">Ingresar</button>
+
+
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>

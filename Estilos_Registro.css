@@ -1,0 +1,111 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --primary: #2c3e50; 
+ --secondary: #3498db; 
+ --accent: #e74c3c; 
+ --success: #2ecc71;
+ --light: #ecf0f1; 
+ --dark: #1a252f; 
+ --white: #ffffff; 
+ --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/*---- Secciones y body ----*/
+.sign-up-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+}
+
+.sign-up-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+}
+
+/*---- titulo ----*/
+header {
+
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    align-items: center;
+    padding: 12px 30px;
+}
+
+
+/*--- Alineacion del formulario y cuadricula---*/
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    background: var(--white);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px 20px; 
+}
+
+fieldset {
+    width: 100%;
+    padding: 20px; 
+    border: 2px solid #ddd;
+    border-radius: 8px; 
+}
+
+.form-grid .full-width {
+ grid-column: span 2; 
+}
+
+/*--- Boton y select ---*/
+.btn-secondary {
+    margin-top: 25px;
+    padding: 12px 30px;
+    cursor: pointer;
+    background: var(--secondary);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: var(--white);
+    color: var(--primary);
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
